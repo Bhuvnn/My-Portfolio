@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    padding-top: 80px;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    /* Fixes the navbar at the top */
+    top: 0;
+    /* Ensures it's at the top of the viewport */
+    width: 100%;
+    /* Makes sure the navbar spans the full width */
+    z-index: 1000;
+    /* Ensures it stays above other content */
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li a:hover {
+    color: #03A062;
+    font-size: 1rem;
+
+}
+
+.left {
+    font-size: 1.7rem;
+    color: #03A062;
+}
+
+#home {
+    display: flex;
+    margin: 70px 0 0 115px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#home>div {
+    width: 40%;
+
+}
+
+.leftsection {
+    font-size: 1.5rem;
+    width: 34px;
+}
+
+.rightsection {
+    width: 34px;
+}
+
+.rightsection img {
+    width: 60%;
+    margin: 20px 100px 0 0px;
+    transform: scalex(-1);
+
+
+}
+
+#infotxt {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    word-spacing: 0.3em;
+    font-size: 0.9rem;
+}
+
+.infobody {
+    margin-top: 30px;
+}
+
+.green {
+    color: white;
+    font-family: "Anta", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+#element {
+    color: #03A062;
+    font-family: "Anta", monospace, 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+}
+
+#about_me {
+    display: flex;
+    margin: 160px 130px 0 130px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leftsection2nd img {
+    width: 70%;
+    margin-left: 50px;
+}
+
+.rightsection2nd {
+    font-size: 5rem;
+    width: 1000px;
+
+
+}
+
+.about {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.about_heading {
+    margin: 20px 0 20px 0;
+    font-size: 2.5rem;
+}
+
+#links {
+    text-decoration: none;
+    font-style: bold;
+    color: #03A062;
+
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin-left: 150px;
+    margin-right: 10px;
+    /* margin: 0 auto; */
+    padding: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Added these properties to ensure consistent sizing */
+.skills-grid>* {
+    max-width: 250px;
+    width: 100%;
+}
+
+.skill-box {
+    background: #0b0b13;
+    border-radius: 0%;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 1px #03A062;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon-name {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.skill-name {
+    margin-left: 10px;
+    display: inline-block;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: "Anta", monospace, 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* Education Section Styles */
+.education-container {
+    max-width: 1200px;
+    margin-left: 150px;
+    padding: 20px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.education-grid>* {
+    max-width: 300px;
+    width: 100%;
+}
+
+.education-box {
+    background: #0b0b13;
+    border-radius: 0%;
+    padding: 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 1px #03A062;
+    width: 300px;
+}
+
+.education-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.education-title {
+    color: #03A062;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.education-school {
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.education-year {
+    color: #888;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.education-grade {
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.form {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 1000;
+    height: 600px;
+    margin-top: -20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    padding: 20px;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 600px;
+    padding: 10px;
+    background: #0b0b13;
+    color: white;
+    margin-bottom: 15px;
+    border: 1px solid #0b0b13;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-form input {
+    height: 30px;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.contact-form button {
+    width: 600px;
+    padding: 10px;
+    background: #03A062;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: white;
+    color: #03A062;
+}
+
+section {
+    /* height: 100vh; Each section takes full viewport height */
+    opacity: 0;
+    /* Start with sections hidden */
+    transition: opacity 2s ease-in-out;
+    /* Fade-in/out transition */
+    color: inherit;
+    /* Default black text color */
+}
+
+section.visible {
+    opacity: 1;
+    /* Fade the section in */
+}
+
+section:nth-child(odd) {
+    background-color: black;
+}
+
+section:nth-child(even) {
+    background-color: black;
+}
+
+footer {
+    background-color: #0b0b13;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .green {
+        font-size: 2.5rem;
+    }
+
+    .about_heading {
+        font-size: 1.8rem;
+    }
+
+    .skill-icon-name {
+        font-size: 16px;
+    }
+
+    .education-title {
+        font-size: 16px;
+    }
+
+    .education-school {
+        font-size: 14px;
+    }
+}
+
+/* From Uiverse.io by ernestnash */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.8rem;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Anta", Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    border: 2px solid #03A062;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #03A062;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+}
+
+html {
+    scroll-padding-top: 120px;
+    /* Adjust based on your navbar height */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+}
+
+#skills {
+    scroll-margin-top: -120px;
+    /* Offset specific to skills section */
+    scroll-behavior: smooth;
+}
+
+#projects {
+    scroll-margin-top: -100px;
+    /* Offset specific to skills section */
+    scroll-behavior: smooth;
+}
+
+.accounts {
+    margin-bottom: 40px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover svg {
+    transform: scale(1.2);
+    transition: transform 0.3s ease, fill 0.3s ease;
+  }
+a{
+    padding-left: 5px;
+    padding-right: 5px;
+}
