@@ -7,6 +7,7 @@
 
     <title>Bhubandeep Singh - ML Enthusiast, Programmer & Web Designer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}?v=1">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -186,7 +187,7 @@
                         </div>
                     </div>
                 </div>
-                <h3>Libraries / Frameworks</h3>
+                <h3>Libraries</h3>
                 <div class="skills-grid">
                     <div class="skill-box">
 
@@ -531,26 +532,6 @@
         </footer>
 
     </main>
-    <script>
-        // Select all the sections
-        const sections = document.querySelectorAll("section");
-
-        // Create an IntersectionObserver to observe sections entering/exiting the viewport
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible"); // Add visible class when in the viewport
-                } else {
-                    entry.target.classList.remove("visible"); // Remove visible class when leaving
-                }
-            });
-        }, {
-            threshold: 0.2
-        }); // Trigger when 20% of the section is visible
-
-        // Start observing each section
-        sections.forEach((section) => observer.observe(section));
-    </script>
     
 
 </body>
