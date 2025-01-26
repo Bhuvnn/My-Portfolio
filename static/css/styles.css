@@ -61,7 +61,7 @@ nav ul li a:hover {
 
 #home {
     display: flex;
-    margin: 70px 0 0 115px;
+    margin: 70px 0 0 105px;
     align-items: center;
     justify-content: space-around;
 }
@@ -92,8 +92,10 @@ nav ul li a:hover {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-weight: 400;
     letter-spacing: 0.2em;
-    word-spacing: 0.3em;
+    word-spacing: 0.2em;
     font-size: 0.9rem;
+    margin-right: 80px;
+    text-align: justify;
 }
 
 .infobody {
@@ -116,7 +118,7 @@ nav ul li a:hover {
 
 #about_me {
     display: flex;
-    margin: 160px 130px 0 130px;
+    margin: 160px 105px 0 105px;
     align-items: center;
     justify-content: space-around;
 }
@@ -148,6 +150,9 @@ nav ul li a:hover {
     font-style: bold;
     color: #03A062;
 
+}
+#skills{
+    margin-left: -12px;
 }
 
 .skills-container {
@@ -217,7 +222,9 @@ h3 {
     margin-bottom: 5px;
 }
 
-
+#education{
+    margin-left: -12px;
+}
 /* Education Section Styles */
 .education-container {
     max-width: 1200px;
@@ -282,11 +289,21 @@ h3 {
     margin-top: 8px;
 }
 
+#projects{
+    margin-left: -12px;
+}
+
+#contact_me{
+    margin-left: -12px;
+
+}
+
 .form {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: 1000;
     height: 600px;
     margin-top: -20px;
+    margin-left: 20px;
     padding: 0;
     display: flex;
     justify-content: center;
