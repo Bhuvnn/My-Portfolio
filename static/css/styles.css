@@ -1,7 +1,7 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -9,41 +9,49 @@ body {
     color: white;
     font-family: 'Poppins', 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
     padding-top: 80px;
-    text-align: center; /* Center align text for smaller screens */
+
+
 }
 
-/* Navbar */
 nav {
     display: flex;
-    justify-content: center; /* Center items in the navbar */
+    justify-content: space-around;
     align-items: center;
     height: 80px;
     background-color: black;
     position: fixed;
+    /* Fixes the navbar at the top */
     top: 0;
+    /* Ensures it's at the top of the viewport */
     width: 100%;
+    /* Makes sure the navbar spans the full width */
     z-index: 1000;
+    /* Ensures it stays above other content */
 }
+
+
 
 nav ul {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 nav ul li {
     list-style: none;
-    margin: 0 15px; /* Reduced margin for mobile */
+    margin: 0 23px;
+
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
+
 }
 
 nav ul li a:hover {
     color: #03A062;
     font-size: 1rem;
+
 }
 
 .left {
@@ -51,19 +59,16 @@ nav ul li a:hover {
     color: #03A062;
 }
 
-/* Home Section */
 #home {
     display: flex;
-    margin: 100px 0 0 0; /* Added margin for spacing */
+    margin: 70px 0 0 105px;
     align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Stack vertically on smaller screens */
-    padding: 20px;
+    justify-content: space-around;
 }
 
-#home > div {
-    width: 100%;
-    text-align: center;
+#home>div {
+    width: 40%;
+
 }
 
 .leftsection {
@@ -71,19 +76,26 @@ nav ul li a:hover {
     width: 34px;
 }
 
+.rightsection {
+    width: 34px;
+}
+
 .rightsection img {
-    width: 80%; /* Adjust image size */
-    margin: 20px 0;
+    width: 60%;
+    margin: 20px 100px 0 0px;
     transform: scalex(-1);
+
+
 }
 
 #infotxt {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-weight: 400;
+    letter-spacing: 0.2em;
+    word-spacing: 0.2em;
     font-size: 0.9rem;
     margin-right: 80px;
     text-align: justify;
-    margin: 0 20px; /* Ensure proper spacing */
 }
 
 .infobody {
@@ -93,18 +105,22 @@ nav ul li a:hover {
 .green {
     color: white;
     font-family: "Anta", monospace;
+    font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 3rem; /* Reduced size */
+    font-style: normal;
+    font-size: 5rem;
 }
 
-/* About Me Section */
+#element {
+    color: #03A062;
+    font-family: "Anta", monospace, 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+}
+
 #about_me {
     display: flex;
-    margin: 160px 0 0 0;
+    margin: 160px 105px 0 105px;
     align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Stack vertically */
-    padding: 20px;
+    justify-content: space-around;
 }
 
 .leftsection2nd img {
@@ -113,24 +129,37 @@ nav ul li a:hover {
 }
 
 .rightsection2nd {
-    font-size: 3rem; /* Reduced font size */
-    text-align: center; /* Center text */
+    font-size: 5rem;
+    width: 1000px;
+
+
 }
 
 .about {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    text-align: center; /* Center text */
 }
 
 .about_heading {
-    margin: 20px 0;
-    font-size: 2rem; /* Reduced size */
+    margin: 20px 0 20px 0;
+    font-size: 2.5rem;
 }
 
-/* Skills Section */
+#links {
+    text-decoration: none;
+    font-style: bold;
+    color: #03A062;
+
+}
+#skills{
+    margin-left: -12px;
+}
+
 .skills-container {
-    max-width: 100%;
+    max-width: 1200px;
+    margin-left: 150px;
+    margin-right: 10px;
+    /* margin: 0 auto; */
     padding: 20px;
 }
 
@@ -141,18 +170,19 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.skills-grid > * {
+/* Added these properties to ensure consistent sizing */
+.skills-grid>* {
     max-width: 250px;
     width: 100%;
 }
 
 .skill-box {
     background: #0b0b13;
-    border-radius: 10px;
+    border-radius: 0%;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 1px 1px #03A062;
     transition: all 0.3s ease;
+    box-shadow: 0 1px 1px #03A062;
 }
 
 .skill-box:hover {
@@ -162,20 +192,44 @@ nav ul li a:hover {
 
 .skill-icon-name {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 20px;
     margin: 5px 0;
+    font-weight: bold;
+    color: white;
 }
 
 .skill-name {
     margin-left: 10px;
-    font-weight: bold;
+    display: inline-block;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
-/* Education Section */
+h2 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    letter-spacing: 0.2rem;
+}
+
+h3 {
+    font-family: "Anta", monospace, 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#education{
+    margin-left: -12px;
+}
+/* Education Section Styles */
 .education-container {
-    max-width: 100%;
+    max-width: 1200px;
+    margin-left: 150px;
     padding: 20px;
 }
 
@@ -186,13 +240,19 @@ nav ul li a:hover {
     padding: 20px;
 }
 
+.education-grid>* {
+    max-width: 300px;
+    width: 100%;
+}
+
 .education-box {
     background: #0b0b13;
     border-radius: 7%;
     padding: 20px;
     text-align: left;
-    box-shadow: 0 1px 1px #03A062;
     transition: all 0.3s ease;
+    box-shadow: 0 1px 1px #03A062;
+    width: 300px;
 }
 
 .education-box:hover {
@@ -200,24 +260,60 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.education-title,
-.education-school,
-.education-year,
-.education-grade {
-    color: white;
+.education-title {
+    color: #03A062;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
-/* Projects Section */
+.education-school {
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.education-year {
+    color: #888;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.education-grade {
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#projects{
+    margin-left: -12px;
+}
+
 .project-container {
-    max-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Stack vertically */
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
     padding: 20px;
+}
+
+.project-grid>* {
+    max-width: 300px;
+    width: 20%;
+}
+.project-btn
+{
+    text-decoration: none;
 }
 
 .project-box {
@@ -227,30 +323,59 @@ nav ul li a:hover {
     text-align: left;
     transition: all 0.3s ease;
     box-shadow: 0 1px 1px #03A062;
-    width: 100%;
+    width: 320px;
+    height: 320px;
 }
 
 .project-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
-.project-box img {
-    width: 100%;
+.project-box img{
+    width: 105%;
     border-radius: 5%;
+    margin-left: -9px;
     margin-bottom: 15px;
 }
 
 .project-title {
     color: #03A062;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
+    margin-bottom: 20px;
+}
+.project-description {
+    color: rgb(160, 155, 155);
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-top: 8px;
+
 }
 
-/* Contact Section */
+#contact_me{
+    margin-left: -12px;
+
+}
+
+.form {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 1000;
+    height: 600px;
+    margin-top: -20px;
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-form {
     padding: 20px;
-    height: auto;
+    height: 600px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -258,22 +383,34 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto; /* Center form */
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%; /* Adjust width */
+    width: 600px;
     padding: 10px;
     background: #0b0b13;
     color: white;
     margin-bottom: 15px;
     border: 1px solid #0b0b13;
     border-radius: 5px;
+    resize: none;
+}
+
+.contact-form input {
+    height: 30px;
+}
+
+.contact-form textarea {
+    height: 200px;
 }
 
 .contact-form button {
-    width: 100%; /* Full width */
+    width: 600px;
     padding: 10px;
     background: #03A062;
     color: #fff;
@@ -287,7 +424,29 @@ nav ul li a:hover {
     color: #03A062;
 }
 
-/* Footer */
+section {
+    /* height: 100vh; Each section takes full viewport height */
+    opacity: 0;
+    /* Start with sections hidden */
+    transition: opacity 2s ease-in-out;
+    /* Fade-in/out transition */
+    color: inherit;
+    /* Default black text color */
+}
+
+section.visible {
+    opacity: 1;
+    /* Fade the section in */
+}
+
+section:nth-child(odd) {
+    background-color: black;
+}
+
+section:nth-child(even) {
+    background-color: black;
+}
+
 footer {
     background-color: #0b0b13;
     text-align: center;
@@ -295,12 +454,14 @@ footer {
     padding-bottom: 20px;
 }
 
-/* Button */
+
+/* From Uiverse.io by ernestnash */
 .btn {
     display: inline-block;
     padding: 0.5rem 1.8rem;
     margin-top: 20px;
     font-size: 16px;
+    font-family: "Anta", Arial, sans-serif;
     font-weight: 700;
     color: white;
     border: 2px solid #03A062;
@@ -310,6 +471,7 @@ footer {
     text-decoration: none;
     overflow: hidden;
     z-index: 1;
+    font-family: inherit;
 }
 
 .btn::before {
@@ -331,43 +493,36 @@ footer {
 
 html {
     scroll-padding-top: 120px;
+    /* Adjust based on your navbar height */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+}
+
+#skills {
+    scroll-margin-top: -120px;
+    /* Offset specific to skills section */
     scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-    /* Adjust grid layouts */
-    .skills-grid,
-    .education-grid,
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
+#projects {
+    scroll-margin-top: -100px;
+    /* Offset specific to skills section */
+    scroll-behavior: smooth;
+}
 
-    /* Stack sections vertically */
-    #about_me, #home, .form {
-        flex-direction: column;
-        align-items: center;
-    }
+.accounts {
+    margin-bottom: 40px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* Reduce font sizes for mobile */
-    .green {
-        font-size: 2.5rem;
-    }
-
-    .about_heading {
-        font-size: 1.8rem;
-    }
-
-    .project-title {
-        font-size: 1.2rem;
-    }
-
-    /* Adjust form inputs */
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
-
-    .contact-form button {
-        width: 100%;
-    }
+a:hover svg {
+    transform: scale(1.2);
+    transition: transform 0.3s ease, fill 0.3s ease;
+  }
+a{
+    padding-left: 5px;
+    padding-right: 5px;
 }
