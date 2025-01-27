@@ -213,6 +213,7 @@ h2 {
     color: white;
     margin-top: 100px;
     margin-bottom: 50px;
+    letter-spacing: 0.2rem;
 }
 
 h3 {
@@ -246,7 +247,7 @@ h3 {
 
 .education-box {
     background: #0b0b13;
-    border-radius: 0%;
+    border-radius: 7%;
     padding: 20px;
     text-align: left;
     transition: all 0.3s ease;
@@ -291,6 +292,68 @@ h3 {
 
 #projects{
     margin-left: -12px;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+.project-grid>* {
+    max-width: 300px;
+    width: 20%;
+}
+.project-btn
+{
+    text-decoration: none;
+}
+
+.project-box {
+    background: #0b0b13;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 1px #03A062;
+    width: 320px;
+    height: 320px;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.project-box img{
+    width: 105%;
+    border-radius: 5%;
+    margin-left: -9px;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    color: #03A062;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.project-description {
+    color: rgb(160, 155, 155);
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-top: 8px;
+
 }
 
 #contact_me{
