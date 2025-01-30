@@ -1,9 +1,5 @@
 /* Medium screens */
 @media screen and (max-width: 992px) {
-    html, body {
-        overflow-x: hidden; /* Prevents horizontal scrolling */
-         width: 100vw; /*Ensures content stays within viewport */
-    }
     body {
         margin: 0;
     }
