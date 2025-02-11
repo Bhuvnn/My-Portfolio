@@ -9,7 +9,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Poppins', 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
-    padding-top: 80px;
+    
 
 
 }
@@ -125,7 +125,7 @@ section
 
 #infotxt {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    margin: auto;
+    margin: 0 auto;
     padding: 10px;
     padding-left:0 ;
     font-weight: 400;
@@ -136,9 +136,10 @@ section
     
 }
 
+
 .infobody {
     margin-top: 30px;
-    margin-right: 100px;
+    margin-right: 100px;    
 }
 
 .green {
@@ -155,33 +156,36 @@ section
     font-family: "Anta", monospace, 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
 }
 
+
+
 #about_me {
     display: flex;
     position: relative;
     margin: 0 auto;
     column-gap: 4rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between; /* Changed to space-between for better alignment */
+    scroll-margin-top: 110px;
+    width: 100%; /* Ensure it takes up the full width */
+    max-width: 1200px; /* Optional max-width for readability */
+    padding: 0 20px; /* Add some padding for better spacing */
 }
-#about_me>div {
-    width: 50%;
 
+#about_me > div {
+    flex: 1; /* Use flex to make the divs take equal space */
 }
 
 .leftsection2nd img {
     max-width: 100%;
-    width: 600px;
+    width: 100%; /* Make the image responsive */
     height: auto;
-    
-    margin-left: -15px;
+    margin-left:-25px; /* Remove negative margin */
 }
 
 .rightsection2nd {
     font-size: 5rem;
-    max-width: 100%;
-    width: 1000px;
-
-
+    max-width: 100%; /* Ensure it takes full width available */
+    width: 100%; /* Center align text */
 }
 
 .about {
@@ -190,19 +194,27 @@ section
 }
 
 .about_heading {
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     font-size: 2.5rem;
+}
+.about_info {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 0;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    font-size: 1rem;
+    text-align: justify;
 }
 
 #links {
     text-decoration: none;
-    font-style: bold;
+    font-weight: bold; /* Use font-weight instead of font-style */
     color: #03A062;
+}
 
-}
-#skills{
-    margin: auto;
-}
 
 .skills-container {
     max-width: 100%;
@@ -268,9 +280,6 @@ h3 {
     font-family: "Anta", monospace, 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
 }
 
-#education{
-    margin: 0 auto;
-}
 /* Education Section Styles */
 .education-container {
     max-width: 100%;
@@ -335,9 +344,7 @@ h3 {
     margin-top: 8px;
 }
 
-#projects{
-    margin: 0 auto;
-}
+
 
 .project-container {
     max-width: 100%;
@@ -404,10 +411,6 @@ h3 {
     /* flex-grow: 1;  */
 }
 
-#contact_me{
-    margin:0 auto;
-
-}
 
 .form {
     font-family: Montserrat, Arial, sans-serif;
@@ -540,22 +543,13 @@ footer {
 }
 
 html {
-    scroll-padding-top: 120px;
     /* Adjust based on your navbar height */
     scroll-behavior: smooth;
     /* Smooth scrolling */
 }
-
-#skills {
-    scroll-margin-top: -120px;
-    /* Offset specific to skills section */
-    scroll-behavior: smooth;
-}
-
-#projects {
+#skills,#projects,#contact_me
+{
     scroll-margin-top: -100px;
-    /* Offset specific to skills section */
-    scroll-behavior: smooth;
 }
 
 .accounts {
