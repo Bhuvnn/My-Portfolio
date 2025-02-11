@@ -192,6 +192,10 @@
         margin: 0 auto;
         text-align: center;
     }
+    #about_me
+    {
+        
+    }
 
     #infotxt {
         width: 100%;
@@ -258,7 +262,6 @@
         margin: 40px auto;
         text-align: center;
         box-sizing: border-box;
-        padding: 0 10px;
     }
 
     .skills-grid,
@@ -303,7 +306,7 @@
     #infotxt {
         font-size: 0.8rem;
         width: 100%;
-        margin: 20px auto;
+        /* margin: 20px auto; */
         padding: 0 10px;
         line-height: 1.6;
         text-align: center;

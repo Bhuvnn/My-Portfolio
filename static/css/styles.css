@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -38,7 +39,7 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 0 23px;
+    margin: 0 25px;
 
 }
 
@@ -86,50 +87,58 @@ nav ul li a:hover {
     font-size: 1.7rem;
     color: #03A062;
 }
+section
+{
+    padding: 120px 11%;
+
+}
 
 #home {
     display: flex;
-    margin: 70px 0 0 105px;
-    align-items: center;
+    position: relative;
+    column-gap: 9rem;
+    margin:0 auto;
     justify-content: space-around;
+    align-items: center;
 }
 
 #home>div {
-    width: 40%;
+    width: 49%;
 
 }
 
 .leftsection {
     font-size: 1.5rem;
-    width: 34px;
 }
 
-.rightsection {
-    width: 34px;
-}
 
 .rightsection img {
-    width: 60%;
-    margin: 20px 100px 0 0px;
+    max-width:100%;
+    width: 400px;
+    height: auto;
     transform: scalex(-1);
+    margin-top: -10px;
+
 
 
 }
 
 #infotxt {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    margin: 0 auto;
+    margin: auto;
     padding: 10px;
-    padding-left: 0;
+    padding-left:0 ;
     font-weight: 400;
     letter-spacing: 0.1em;
     word-spacing: 0.1em;
     font-size: 1rem;
-    text-align: left;
+    text-align: justify;
+    
 }
 
 .infobody {
     margin-top: 30px;
+    margin-right: 100px;
 }
 
 .green {
@@ -148,18 +157,28 @@ nav ul li a:hover {
 
 #about_me {
     display: flex;
-    margin: 160px 105px 0 105px;
+    position: relative;
+    margin: 0 auto;
+    column-gap: 4rem;
     align-items: center;
     justify-content: space-around;
 }
+#about_me>div {
+    width: 50%;
+
+}
 
 .leftsection2nd img {
-    width: 70%;
-    margin-left: 50px;
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    
+    margin-left: -15px;
 }
 
 .rightsection2nd {
     font-size: 5rem;
+    max-width: 100%;
     width: 1000px;
 
 
@@ -182,27 +201,27 @@ nav ul li a:hover {
 
 }
 #skills{
-    margin-left: -12px;
+    margin: auto;
 }
 
 .skills-container {
-    max-width: 1200px;
-    
+    max-width: 100%;
+    width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
 /* Added these properties to ensure consistent sizing */
 .skills-grid>* {
-    max-width: 250px;
-    width: 100%;
+    max-width: 100% ;
+    width: 240px;
 }
 
 .skill-box {
@@ -247,33 +266,29 @@ h2 {
 
 h3 {
     font-family: "Anta", monospace, 'Segoe UI', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 5px;
 }
 
 #education{
-    margin-left: -12px;
+    margin: 0 auto;
 }
 /* Education Section Styles */
 .education-container {
-    max-width: 1200px;
+    max-width: 100%;
+    width: 1400px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    padding: 20px;
     justify-items: center;
 }
 
-/* .education-grid>* {
-    max-width: 300px;
-    width: 100%;
-} */
+.education-grid>* {
+    max-width: 100%;
+    width: 300px;
+}
 
 .education-box {
     background: #0b0b13;
@@ -282,7 +297,7 @@ h3 {
     text-align: left;
     transition: all 0.3s ease;
     box-shadow: 0 1px 1px #03A062;
-    width: 300px;
+    width: 400px;
 }
 
 .education-box:hover {
@@ -321,13 +336,13 @@ h3 {
 }
 
 #projects{
-    margin-left: -12px;
+    margin: 0 auto;
 }
 
 .project-container {
-    max-width: 1200px;
+    max-width: 100%;
+    width: 2000px;
     margin: 0 auto;
-    padding: 20px;
     text-decoration: none;
 }
 
@@ -335,8 +350,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
-    padding: 20px;
-    justify-items: center;
+    justify-content: center;
 }
 
 .project-box {
@@ -391,7 +405,7 @@ h3 {
 }
 
 #contact_me{
-    margin: 0 auto;
+    margin:0 auto;
 
 }
 
