@@ -253,7 +253,7 @@
 
     .contact-form {
         width: 100%;
-        max-width: 500px;
+        max-width: 600px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -345,12 +345,7 @@
         min-height: 350px;
     }
 
-    .project-box img {
-        height: 180px;
-        width: 114%;
-        object-fit: cover;
-    }
-
+    
     .skill-box,
     .education-box {
         display: flex;
