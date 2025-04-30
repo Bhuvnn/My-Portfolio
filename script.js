@@ -46,3 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+
+    emailjs.sendForm('service_tzvojgp', 'template_qr1ot4j', this)
+      .then(function(response) {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send message. Please try again.');
+        console.error('EmailJS error:', error);
+      });
+  });

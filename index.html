@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bhubandeep Singh - ML Enthusiast, Programmer & Web Designer</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -25,6 +25,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;1,600&display=swap"
         rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+          // Initialize EmailJS with your user ID
+          (function() {
+            emailjs.init("swlJ1TytyPYSyooXD"); // Replace with your actual user ID
+          })();
+        </script>
 
 </head>
 
@@ -72,7 +80,7 @@
                         user-friendly digital experiences</div>
                 </div>
                 <div ">
-                    <a href=" static\files\resume.pdf" target="_blank">
+                    <a href=" resume.pdf" target="_blank">
                     <button class="btn">Download Resume</button>
                     </a>
                 </div>
@@ -80,12 +88,12 @@
 
             </div>
             <div class="rightsection">
-                <img src="static\images\bg.png" alt="AI Image">
+                <img src="images\bg.png" alt="AI Image">
             </div>
         </section>
         <section id="about_me">
             <div class="leftsection2nd">
-                <img src="static\images\hobbies.png" alt="AI Image">
+                <img src="images\hobbies.png" alt="AI Image">
             </div>
             <div class="rightsection2nd">
                 <div class="about">ABOUT ME</div>
@@ -482,7 +490,7 @@
                 <div class="project-grid">
                     <a class="project-btn" href="https://catchaphish.onrender.com/">
                         <div class="project-box">
-                            <div class="project-image"><img src="static\images\CatchaPhish.png" alt="CatchaPhish-image">
+                            <div class="project-image"><img src="images\CatchaPhish.png" alt="CatchaPhish-image">
                             </div>
                             <div class="project-title">CatchaPhish</div>
                             <div class="project-description"> An AI-powered phishing detection tool that safeguards
@@ -492,7 +500,7 @@
 
                     <a class="project-btn" href="https://my-portfolio-98lq.onrender.com/">
                         <div class="project-box">
-                            <div class="project-image"><img src="static\images\portfolio.png" alt="portfolio-image">
+                            <div class="project-image"><img src="images\portfolio.png" alt="portfolio-image">
                             </div>
                             <div class="project-title">My-Portfolio</div>
                             <div class="project-description">A interactive portfolio website that highlights
@@ -503,7 +511,7 @@
 
                     <a class="project-btn" href="https://github.com/Bhuvnn/Pong-Game">
                         <div class="project-box">
-                            <div class="project-image"><img src="static\images\pong-game.png" alt="pong-game-image">
+                            <div class="project-image"><img src="images\pong-game.png" alt="pong-game-image">
                             </div>
                             <div class="project-title">The Pong Game</div>
                             <div class="project-description">A classic Pong game built with engaging mechanics and
@@ -513,7 +521,7 @@
 
                     <a class="project-btn" href="https://github.com/Bhuvnn/Snake-Game">
                         <div class="project-box">
-                            <div class="project-image"><img src="static\images\snake-game.png" alt="snake-game-image">
+                            <div class="project-image"><img src="images\snake-game.png" alt="snake-game-image">
                             </div>
                             <div class="project-title">The Snake Game</div>
                             <div class="project-description">A retro-inspired Snake game featuring smooth controls and
@@ -612,7 +620,7 @@
     </main>
 
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="script.js"></script>
 </body>
 
 
