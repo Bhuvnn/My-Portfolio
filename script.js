@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.getElementsByClassName('contact-form').addEventListener('submit', function(e) {
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent default form submission
 
     emailjs.sendForm('service_tzvojgp', 'template_qr1ot4j', this)
